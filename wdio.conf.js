@@ -2,6 +2,10 @@
  * Created by elegrottaglie on 31/08/17.
  */
 
+var CustomReporter = require('./reporters/my.custom.reporter');
+CustomReporter.reporterName = 'myCustomReporter';
+
+
 exports.config = {
 
     specs: [
@@ -20,7 +24,12 @@ exports.config = {
     baseUrl: 'http://webdriver.io',
     waitforTimeout: 10000,
     framework: 'jasmine',
-    reporter: 'dot',
+    reporters: ['spec','allure', CustomReporter],
+    reporterOptions: {
+        allure: {
+            outputDir: './reporters/allure-results'
+        }
+    },
     services: ['selenium-standalone'],
 
     jasmineNodeOpts: {

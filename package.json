@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "devDependencies": {
     "selenium-standalone": "~6.8.0",
+    "wdio-allure-reporter": "^0.1.2",
     "wdio-jasmine-framework": "^0.3.2",
     "wdio-selenium-standalone-service": "~0.0.9",
+    "wdio-spec-reporter": "^0.1.2",
     "webdriverio": "~4.8.0"
   },
   "engines": {
