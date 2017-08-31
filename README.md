@@ -23,7 +23,6 @@ npm install
 
 ```
 ./node_modules/.bin/wdio
-
 ```
 
 ### List of Tests: ###
