@@ -8,7 +8,10 @@ exports.config = {
         './e2e/specs/*.js'
     ],
 
+    maxInstances: 2,
+
     capabilities: [{
+        maxInstances: 2,
         browserName: 'chrome'
     }],
     logLevel: 'error',
