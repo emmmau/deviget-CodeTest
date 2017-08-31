@@ -5,7 +5,7 @@
 exports.config = {
 
     specs: [
-        './e2e/**/*.js'
+        './e2e/specs/*.js'
     ],
 
     capabilities: [{
@@ -18,6 +18,7 @@ exports.config = {
     waitforTimeout: 10000,
     framework: 'jasmine',
     reporter: 'dot',
+    services: ['selenium-standalone'],
 
     jasmineNodeOpts: {
 
