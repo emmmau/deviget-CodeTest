@@ -16,6 +16,7 @@ describe('First Test', function () {
         assert.equal(title, 'WebdriverIO - WebDriver bindings for Node.js');
         assert.equal(browser.getText('a.button.getstarted'), 'GET STARTED');
         browser.click('a.button.getstarted');
+        //assert verification
         assert.equal(browser.getText('#Developer-Guide'), 'DEVELOPER GUIDE');
     });
 });

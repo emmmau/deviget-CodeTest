@@ -15,8 +15,9 @@ describe('Second Test', function () {
         browser.setValue('.ds-input', 'customreporter');
         browser.waitForVisible('.algolia-docsearch-suggestion--text');
         browser.click('.algolia-docsearch-suggestion--text');
-        expect(browser.getUrl()).toContain('reporter');
         assert.equal(browser.getText('#Custom-Reporter'), 'CUSTOM REPORTER');
+        //expect jasmine verification
+        expect(browser.getUrl()).toContain('reporter');
 
     });
 });

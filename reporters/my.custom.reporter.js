@@ -33,7 +33,7 @@ var CustomReporter = function(options) {
     });
 
     this.on('end', function() {
-            console.log('end all the tests');
+            console.log('end all the tests. Thanks!');
         });
 };
 
