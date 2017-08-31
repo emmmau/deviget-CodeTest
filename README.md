@@ -29,6 +29,7 @@ npm install
 ### List of Tests: ###
 
 firstTest (Get the tittle of the page, buttons and click on a button)
+
 secondTest (Search on the page, verify page redirection)
 
 ### Who do I talk to? ###
